@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
-import { loadRecords, setPage } from './recordsSlice';
+import { loadRecords, setPage, resetRecords } from './recordsSlice';
 import {
   selectRecords,
   selectColumns,
@@ -11,6 +11,7 @@ import {
   selectorLimit,
 } from './selectors';
 import InfiniteScroll from 'react-infinite-scroll-component';
+import { RecordConstructor } from '../recordConstructor/recordConstructor';
 import type { RecordValue } from '../../types/record';
 
 export const TableBlock: React.FC = () => {
@@ -27,6 +28,22 @@ export const TableBlock: React.FC = () => {
   useEffect(() => {
     dispatch(loadRecords({ page: 1, limit }));
   }, [dispatch, limit]);
+
+  useEffect(() => {
+    const tryFetchMore = () => {
+      const content = document.getElementById('table-scroll-area');
+      if (
+        content &&
+        content.scrollHeight <= window.innerHeight &&
+        hasMore &&
+        !loading
+      ) {
+        fetchMoreData();
+      }
+    };
+
+    tryFetchMore();
+  }, [records, hasMore, loading]);
 
   const fetchMoreData = () => {
     const nextPage = page + 1;
@@ -60,8 +77,12 @@ export const TableBlock: React.FC = () => {
   }
 
   return (
-    <div className="ms-3 me-3 mt-2 p-0">
+    <div id="table-scroll-area" className="ms-3 me-3 mt-2 p-0">
       <h2>Таблица записей</h2>
+      <RecordConstructor onSuccess={() => {
+        dispatch(resetRecords());
+        dispatch(loadRecords({ page: 1, limit })); 
+        }} />
       {error && <div className="text-danger text-center">{error}</div>}
       {loading && records.length === 0 ? (
         <div className="text-center my-4">Загрузка...</div>

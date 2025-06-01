@@ -1,5 +1,5 @@
 import axios from 'axios';
-import type { RecordType } from '../../types/record';
+import type { RecordType, Field } from '../../types/record';
 import { API_URL } from './link';
 
 export interface FetchRecordsResponse {
@@ -18,3 +18,14 @@ export const fetchRecords = async (
 
   return response.data;
 };
+
+export async function createRecord(fields: Field[]) {
+  const record: Record<string, any> = {};
+  fields.forEach(f => {
+    let val: any = f.value;
+    if (f.type === 'number') val = Number(f.value);
+    if (f.type === 'boolean') val = f.value === 'true';
+    record[f.key] = val;
+  });
+  return axios.post(`${API_URL}/records`, record);
+}
