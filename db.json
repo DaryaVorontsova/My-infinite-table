@@ -1,0 +1,40 @@
+{
+  "records": [
+    { "id": 1, "name": "Иван Иванов", "email": "ivanov@example.com", "age": 30, "status": "active", "date": "2024-06-01" },
+    { "id": 2, "name": "Анна Смирнова", "email": "smirnova@example.com", "city": "Санкт-Петербург", "balance": 7200, "department": "IT" },
+    { "id": 3, "name": "Петр Козлов", "age": 35, "status": "active", "notes": "Нуждается в повышении", "rating": 4.2 },
+    { "id": 4, "title": "Спец. задача", "created_at": "2024-04-01", "author": "user123" },
+    { "id": 5, "name": "Ольга Сидорова", "email": "sidorova@example.com", "age": 25, "status": "active", "date": "2024-04-07", "extra": "Временно в отпуске" },
+    { "id": 6, "description": "Тестовая запись без имени", "foo": "bar" },
+    { "id": 7, "name": "Марина Петрова", "date": "2024-05-01", "phone": "+7 980 112-45-98", "notes": "" },
+    { "id": 8, "name": "Андрей", "score": 50, "skills": ["js", "react"] },
+    { "id": 9, "user": "user9", "active": false, "comments_count": 3 },
+    { "id": 10, "foo": "bar", "bar": "baz", "qux": "quux" },
+    { "id": 11, "name": "Екатерина Волкова", "email": "volkova@example.com", "age": 29, "status": "inactive", "date": "2024-03-11" },
+    { "id": 12, "name": "Сергей Павлов", "email": "pavlov@example.com", "city": "Москва", "balance": 4800, "department": "HR" },
+    { "id": 13, "name": "Наталья Громова", "age": 41, "status": "active", "notes": "Прошла курсы", "rating": 4.7 },
+    { "id": 14, "title": "Обновить ПО", "created_at": "2024-02-13", "author": "admin" },
+    { "id": 15, "name": "Денис Дорофеев", "email": "dorofeev@example.com", "age": 27, "status": "inactive", "date": "2024-02-07", "extra": "В декрете" },
+    { "id": 16, "description": "Без имени, только foo", "foo": "baz" },
+    { "id": 17, "name": "Людмила Романова", "date": "2024-04-23", "phone": "+7 923 543-12-78", "notes": "Уволена" },
+    { "id": 18, "name": "Роман", "score": 80, "skills": ["python", "sql"] },
+    { "id": 19, "user": "user19", "active": true, "comments_count": 7 },
+    { "id": 20, "foo": "quux", "bar": "foo", "qux": "baz" },
+    { "id": 21, "name": "Кирилл Лебедев", "email": "lebedev@example.com", "age": 31, "status": "active", "date": "2024-05-05" },
+    { "id": 22, "name": "Алиса Фомина", "email": "fomina@example.com", "city": "Екатеринбург", "balance": 6500, "department": "Finance" },
+    { "id": 23, "name": "Глеб Тарасов", "age": 34, "status": "inactive", "notes": "Отпуск", "rating": 3.9 },
+    { "id": 24, "title": "Сделать отчет", "created_at": "2024-05-20", "author": "manager" },
+    { "id": 25, "name": "Владимир Орлов", "email": "orlov@example.com", "age": 45, "status": "active", "date": "2024-06-10", "extra": "Работает удаленно" },
+    { "id": 26, "description": "Очередная без имени", "foo": "foo" },
+    { "id": 27, "name": "Олеся Баранова", "date": "2024-07-01", "phone": "+7 991 123-56-89", "notes": "Переведена в другой отдел" },
+    { "id": 28, "name": "Павел", "score": 100, "skills": ["go", "docker"] },
+    { "id": 29, "user": "user29", "active": false, "comments_count": 0 },
+    { "id": 30, "foo": "baz", "bar": "quux", "qux": "foo" }
+  ],
+  "comments": [
+    { "id": "1", "text": "Первый комментарий к записи 1", "recordId": "1" }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

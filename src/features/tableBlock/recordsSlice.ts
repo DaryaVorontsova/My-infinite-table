@@ -20,7 +20,7 @@ const initialState: RecordsState = {
   error: null,
   page: 1,
   hasMore: true,
-  limit: 5,
+  limit: 10,
 };
 
 export const loadRecords = createAsyncThunk<
