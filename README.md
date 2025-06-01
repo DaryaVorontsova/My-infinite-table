@@ -78,7 +78,7 @@ npm --version
 
 3. Клонирование репозитория
 ```bash
-git clone [https://github.com/your-username/my-infinite-table.git](https://github.com/your-username/my-infinite-table.git)
+git clone https://github.com/your-username/my-infinite-table.git
 cd my-infinite-table
 ```
 2. Установка зависимостей
