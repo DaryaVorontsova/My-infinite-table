@@ -16,6 +16,7 @@ describe('API: fetchRecords и createRecord', () => {
       next: 2,
       last: 5,
     };
+
     mock.onGet(/\/records/).reply(200, responseData);
 
     const res = await fetchRecords(1, 10);
@@ -42,8 +43,9 @@ describe('API: fetchRecords и createRecord', () => {
 
     mock.onPost(/\/records/).reply(config => {
       const body = JSON.parse(config.data);
+
       expect(body).toEqual(expectedRecord);
-      
+
       return [201, { ...body, id: 100 }];
     });
 

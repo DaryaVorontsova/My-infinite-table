@@ -20,12 +20,21 @@ export const fetchRecords = async (
 };
 
 export async function createRecord(fields: Field[]) {
-  const record: Record<string, any> = {};
+  const record: Record<string, unknown> = {};
+
   fields.forEach(f => {
-    let val: any = f.value;
-    if (f.type === 'number') val = Number(f.value);
-    if (f.type === 'boolean') val = f.value === 'true';
+    let val: unknown = f.value;
+
+    if (f.type === 'number') {
+      val = Number(f.value);
+    }
+
+    if (f.type === 'boolean') {
+      val = f.value === 'true';
+    }
+
     record[f.key] = val;
   });
+
   return axios.post(`${API_URL}/records`, record);
 }

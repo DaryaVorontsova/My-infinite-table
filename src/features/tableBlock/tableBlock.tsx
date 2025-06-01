@@ -32,6 +32,7 @@ export const TableBlock: React.FC = () => {
   useEffect(() => {
     const tryFetchMore = () => {
       const content = document.getElementById('table-scroll-area');
+
       if (
         content &&
         content.scrollHeight <= window.innerHeight &&
@@ -79,10 +80,12 @@ export const TableBlock: React.FC = () => {
   return (
     <div id="table-scroll-area" className="ms-3 me-3 mt-2 p-0">
       <h2>Таблица записей</h2>
-      <RecordConstructor onSuccess={() => {
-        dispatch(resetRecords());
-        dispatch(loadRecords({ page: 1, limit })); 
-        }} />
+      <RecordConstructor
+        onSuccess={() => {
+          dispatch(resetRecords());
+          dispatch(loadRecords({ page: 1, limit }));
+        }}
+      />
       {error && <div className="text-danger text-center">{error}</div>}
       {loading && records.length === 0 ? (
         <div className="text-center my-4">Загрузка...</div>

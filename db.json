@@ -1,35 +1,238 @@
 {
   "records": [
-    { "id": 1, "name": "Иван Иванов", "email": "ivanov@example.com", "age": 30, "status": "active", "date": "2024-06-01", "department": "IT", "balance": 9500 },
-    { "id": 2, "name": "Анна Смирнова", "email": "smirnova@example.com", "status": "active", "age": 28, "date": "2024-05-22" },
-    { "id": 3, "name": "Петр Козлов", "email": "kozlov@example.com", "status": "inactive", "notes": "Повышение", "age": 35 },
-    { "id": 4, "name": "Мария Орлова", "email": "orlova@example.com", "status": "active", "department": "HR", "date": "2024-04-01" },
-    { "id": 5, "name": "Влад Сидоров", "age": 40, "status": "active", "date": "2024-06-17", "extra": "Удаленно" },
-    { "id": 6, "name": "Андрей Павлов", "email": "pavlov@example.com", "age": 27 },
-    { "id": 7, "name": "Елена Волкова", "email": "volkova@example.com", "age": 25, "status": "active", "date": "2024-05-14", "department": "HR" },
-    { "id": 8, "name": "Глеб Тарасов", "age": 31, "status": "active", "skills": ["js", "react"] },
-    { "id": 9, "name": "Марина Петрова", "email": "petrova@example.com", "age": 29 },
-    { "id": 10, "name": "Олег Захаров", "email": "zakharov@example.com", "status": "active", "date": "2024-07-01" },
-    { "id": 11, "name": "Алиса Фомина", "email": "fomina@example.com", "department": "IT", "age": 24, "status": "active" },
-    { "id": 12, "name": "Георгий Сергеев", "email": "sergeev@example.com", "age": 45, "notes": "Стажировка" },
-    { "id": 13, "name": "Денис Дорофеев", "email": "dorofeev@example.com", "age": 27, "status": "inactive", "department": "Finance" },
-    { "id": 14, "name": "Олеся Баранова", "date": "2024-04-01", "department": "IT", "phone": "+7 991 123-56-89", "notes": "Переведена" },
-    { "id": 15, "name": "Никита Орлов", "age": 38, "email": "nikita.orlov@example.com", "department": "Finance", "balance": 7300 },
-    { "id": 16, "name": "Полина Смирнова", "email": "polina@example.com", "age": 31, "date": "2024-03-13" },
-    { "id": 17, "name": "Игорь Лебедев", "email": "lebedev@example.com", "age": 37, "status": "inactive" },
-    { "id": 18, "name": "Кирилл Макаров", "department": "IT", "age": 29, "skills": ["python", "sql"] },
-    { "id": 19, "name": "Оксана Романова", "status": "active", "age": 26, "notes": "Стажер" },
-    { "id": 20, "name": "Павел Васильев", "email": "vasiliev@example.com", "age": 41, "date": "2024-07-04" },
-    { "id": 21, "name": "Сергей Шаров", "email": "sharov@example.com", "department": "Finance", "age": 33 },
-    { "id": 22, "name": "Екатерина Юдина", "email": "yudina@example.com", "age": 28, "status": "active", "date": "2024-06-09" },
-    { "id": 23, "name": "Дмитрий Савельев", "age": 39, "department": "HR", "notes": "Договор" },
-    { "id": 24, "name": "Виктория Самойлова", "email": "samoylova@example.com", "age": 34, "department": "Finance", "date": "2024-02-22" },
-    { "id": 25, "name": "Евгений Петров", "age": 30, "status": "active" },
-    { "id": 26, "name": "Татьяна Соколова", "email": "sokolova@example.com", "age": 27, "notes": "Командировка" },
-    { "id": 27, "name": "Максим Громов", "email": "gromov@example.com", "age": 32, "department": "HR", "status": "active" },
-    { "id": 28, "name": "Наталья Сергеева", "email": "n.sergeeva@example.com", "age": 29, "skills": ["go", "docker"], "extra": "Проект A" },
-    { "id": 29, "name": "Руслан Кузнецов", "email": "kuznetsov@example.com", "department": "Finance", "balance": 9100, "age": 40 },
-    { "id": 30, "name": "Светлана Баранова", "age": 36, "status": "active"}
+    {
+      "id": "1",
+      "name": "Иван Иванов",
+      "email": "ivanov@example.com",
+      "age": 30,
+      "status": "active",
+      "date": "2024-06-01",
+      "department": "IT",
+      "balance": 9500
+    },
+    {
+      "id": "2",
+      "name": "Анна Смирнова",
+      "email": "smirnova@example.com",
+      "status": "active",
+      "age": 28,
+      "date": "2024-05-22"
+    },
+    {
+      "id": "3",
+      "name": "Петр Козлов",
+      "email": "kozlov@example.com",
+      "status": "inactive",
+      "notes": "Повышение",
+      "age": 35
+    },
+    {
+      "id": "4",
+      "name": "Мария Орлова",
+      "email": "orlova@example.com",
+      "status": "active",
+      "department": "HR",
+      "date": "2024-04-01"
+    },
+    {
+      "id": "5",
+      "name": "Влад Сидоров",
+      "age": 40,
+      "status": "active",
+      "date": "2024-06-17",
+      "extra": "Удаленно"
+    },
+    {
+      "id": "6",
+      "name": "Андрей Павлов",
+      "email": "pavlov@example.com",
+      "age": 27
+    },
+    {
+      "id": "7",
+      "name": "Елена Волкова",
+      "email": "volkova@example.com",
+      "age": 25,
+      "status": "active",
+      "date": "2024-05-14",
+      "department": "HR"
+    },
+    {
+      "id": "8",
+      "name": "Глеб Тарасов",
+      "age": 31,
+      "status": "active",
+      "skills": [
+        "js",
+        "react"
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Марина Петрова",
+      "email": "petrova@example.com",
+      "age": 29
+    },
+    {
+      "id": "10",
+      "name": "Олег Захаров",
+      "email": "zakharov@example.com",
+      "status": "active",
+      "date": "2024-07-01"
+    },
+    {
+      "id": "11",
+      "name": "Алиса Фомина",
+      "email": "fomina@example.com",
+      "department": "IT",
+      "age": 24,
+      "status": "active"
+    },
+    {
+      "id": "12",
+      "name": "Георгий Сергеев",
+      "email": "sergeev@example.com",
+      "age": 45,
+      "notes": "Стажировка"
+    },
+    {
+      "id": "13",
+      "name": "Денис Дорофеев",
+      "email": "dorofeev@example.com",
+      "age": 27,
+      "status": "inactive",
+      "department": "Finance"
+    },
+    {
+      "id": "14",
+      "name": "Олеся Баранова",
+      "date": "2024-04-01",
+      "department": "IT",
+      "phone": "+7 991 123-56-89",
+      "notes": "Переведена"
+    },
+    {
+      "id": "15",
+      "name": "Никита Орлов",
+      "age": 38,
+      "email": "nikita.orlov@example.com",
+      "department": "Finance",
+      "balance": 7300
+    },
+    {
+      "id": "16",
+      "name": "Полина Смирнова",
+      "email": "polina@example.com",
+      "age": 31,
+      "date": "2024-03-13"
+    },
+    {
+      "id": "17",
+      "name": "Игорь Лебедев",
+      "email": "lebedev@example.com",
+      "age": 37,
+      "status": "inactive"
+    },
+    {
+      "id": "18",
+      "name": "Кирилл Макаров",
+      "department": "IT",
+      "age": 29,
+      "skills": [
+        "python",
+        "sql"
+      ]
+    },
+    {
+      "id": "19",
+      "name": "Оксана Романова",
+      "status": "active",
+      "age": 26,
+      "notes": "Стажер"
+    },
+    {
+      "id": "20",
+      "name": "Павел Васильев",
+      "email": "vasiliev@example.com",
+      "age": 41,
+      "date": "2024-07-04"
+    },
+    {
+      "id": "21",
+      "name": "Сергей Шаров",
+      "email": "sharov@example.com",
+      "department": "Finance",
+      "age": 33
+    },
+    {
+      "id": "22",
+      "name": "Екатерина Юдина",
+      "email": "yudina@example.com",
+      "age": 28,
+      "status": "active",
+      "date": "2024-06-09"
+    },
+    {
+      "id": "23",
+      "name": "Дмитрий Савельев",
+      "age": 39,
+      "department": "HR",
+      "notes": "Договор"
+    },
+    {
+      "id": "24",
+      "name": "Виктория Самойлова",
+      "email": "samoylova@example.com",
+      "age": 34,
+      "department": "Finance",
+      "date": "2024-02-22"
+    },
+    {
+      "id": "25",
+      "name": "Евгений Петров",
+      "age": 30,
+      "status": "active"
+    },
+    {
+      "id": "26",
+      "name": "Татьяна Соколова",
+      "email": "sokolova@example.com",
+      "age": 27,
+      "notes": "Командировка"
+    },
+    {
+      "id": "27",
+      "name": "Максим Громов",
+      "email": "gromov@example.com",
+      "age": 32,
+      "department": "HR",
+      "status": "active"
+    },
+    {
+      "id": "28",
+      "name": "Наталья Сергеева",
+      "email": "n.sergeeva@example.com",
+      "age": 29,
+      "skills": [
+        "go",
+        "docker"
+      ],
+      "extra": "Проект A"
+    },
+    {
+      "id": "29",
+      "name": "Руслан Кузнецов",
+      "email": "kuznetsov@example.com",
+      "department": "Finance",
+      "balance": 9100,
+      "age": 40
+    },
+    {
+      "id": "30",
+      "name": "Светлана Баранова",
+      "age": 36,
+      "status": "active"
+    }
   ],
   "comments": [
     {
